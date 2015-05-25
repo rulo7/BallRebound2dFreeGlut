@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="89">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>src/Circulo.h</itemPath>
+      <itemPath>src/Escena.h</itemPath>
+      <itemPath>src/Excepciones.h</itemPath>
+      <itemPath>src/Lapiz.h</itemPath>
+      <itemPath>src/Lista.h</itemPath>
+      <itemPath>src/Obstaculo.h</itemPath>
+      <itemPath>src/PV2D.h</itemPath>
+      <itemPath>src/Pelota.h</itemPath>
+      <itemPath>src/Triangulo.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>src/Circulo.cpp</itemPath>
+      <itemPath>src/Lapiz.cpp</itemPath>
+      <itemPath>src/Obstaculo.cpp</itemPath>
+      <itemPath>src/Pelota.cpp</itemPath>
+      <itemPath>src/Triangulo.cpp</itemPath>
+      <itemPath>src/main.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>src</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <incDir>
+            <pElem>/usr/include/GL</pElem>
+          </incDir>
+        </ccTool>
+        <linkerTool>
+          <commandLine>-lglut -lGL -lGLU</commandLine>
+        </linkerTool>
+      </compileType>
+      <item path="src/Circulo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Circulo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Escena.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Excepciones.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Lapiz.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Lapiz.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Lista.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Obstaculo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Obstaculo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/PV2D.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Pelota.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Pelota.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Triangulo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Triangulo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="src/Circulo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Circulo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Escena.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Excepciones.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Lapiz.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Lapiz.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Lista.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Obstaculo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Obstaculo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/PV2D.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Pelota.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Pelota.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Triangulo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Triangulo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

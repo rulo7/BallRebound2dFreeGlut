@@ -1,0 +1,90 @@
+/**
+ * Clase punto.
+ * Autores: Raul Cobos y Alvar Soler 
+ * 
+ * */
+
+#ifndef PUNTO_H
+#define	PUNTO_H
+#include <math.h>
+#include <iostream>
+
+class PV2D {
+private:
+    GLdouble _x, _y;
+    bool _esVector;
+public:
+
+    PV2D() {
+        this->_x = 0;
+        this->_y = 0;
+        this->_esVector = false;
+    };
+
+    PV2D(GLfloat x, GLfloat y) {
+        this->_x = x;
+        this->_y = y;
+        this->_esVector = false;
+    };
+
+    PV2D(GLfloat x, GLfloat y, bool esVector) {
+        this->_x = x;
+        this->_y = y;
+        this->_esVector = esVector;
+    }
+
+    GLdouble getX() {
+        return _x;
+    };
+
+    GLdouble getY() {
+        return _y;
+    }
+
+    GLdouble distanciaPto2Pto(PV2D pto) {
+        return abs(sqrt(pow((this->_x - pto._x), 2.0) + pow((this->_y - pto._y), 2.0)));
+    }
+
+    GLdouble modulo() {
+        return sqrt(pow(_x, 2) + pow(_y, 2));
+    }
+
+    PV2D normalizar() {
+        return PV2D(this->_x / modulo(), this->_y / modulo());
+    }
+
+    GLdouble productoEscalar(PV2D v) {
+        return (_x  *  v._x) + (_y  *  v._y);
+    }
+
+    PV2D normalIzq() {
+        return PV2D(-this->_y, this->_x);
+    }
+
+    PV2D normalDer() {
+        return PV2D(this->_y, -this->_x);
+    }
+
+    bool esPerpendicular(const PV2D v) {
+        return (productoEscalar(v) == 0);
+    }
+
+    /**
+     * Devuelve el vector de reflejo
+     * @param n
+     * @return 
+     */
+    PV2D reflejo(PV2D n) {
+        GLdouble a = this->productoEscalar(n) / pow(n.modulo(),2);
+        //return PV2D(this->_x - (2 * a * n.getX()), -(this->_y - (2 * a * n.getY())));
+        // creo que los signos son al revés. Nos salia un reflejo que era de signo contrario del que tenía que salir
+        return PV2D(-this->_x - (2 * a * n.getX()), (this->_y - (2 * a * n.getY())));
+    }
+
+    void mostrar() {
+        std::cout << "(" << _x << "," << _y << ")" << std::endl;
+    }
+};
+
+#endif	/* PUNTO_H */
+
